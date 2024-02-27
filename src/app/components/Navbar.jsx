@@ -15,7 +15,7 @@ export default function Navbar() {
     }
 
   return (
-    <nav className="flex justify-between px-[2rem] py-8">
+    <nav className="flex justify-between px-[2rem] py-8 bg-gray-200 fixed inset-x-0">
         <ul className="flex items-start gap-4">
             <li>
                 <Link href="/">
@@ -53,12 +53,16 @@ export default function Navbar() {
                 <li>
                 <Link href="/contact">Contact</Link>
                 </li>
-                <li>
-                <Link href="/cart" className="flex items-center gap-2">
-                   <RiShoppingBasketLine/> 
-                   <span>{cart}</span>
-                </Link>
-                </li>
+                <div className=' flex pl-8 w-10 h-8 border border-gray-500 rounded-md justify-center text-xl'>
+                    <li>
+                        <Link href="/cart" className="flex items-center gap-2">
+                            <span className=' flex w-7 h-8 justify-center items-center bg-gray-500 rounded-md text-xl'>
+                            <RiShoppingBasketLine/> 
+                            </span>
+                            <span className=' flex pr-12 justify-center items-center'>{cart}</span>
+                        </Link>
+                    </li>
+                </div>
             </ul>
        </div> 
     </nav>

@@ -9,12 +9,12 @@ import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className= {`h-[80vh] bg-gray-200 ${styles.footer}`}>
+    <footer className= {`h-[76vh] bg-gray-200 ${styles.footer}`}>
 
-        <div className= "flex items-start">
+        <div className= "flex items-start py-20 px-20">
 
             <section>
-                <h2>Navigate</h2>
+                <h2 className=' text-xl pb-4'>Navigate</h2>
                 <ul>
                     <li>
                         <Link href="/">Home</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
                 </ul>
             </section>
             <section>
-                <h2>Shop</h2>
+                <h2 className=' text-xl pb-4'>Shop</h2>
                 <ul>
                     <li>
                         <Link href="/">By Activity</Link>
@@ -48,7 +48,7 @@ export default function Footer() {
                 </ul>
             </section>
             <section>
-                <h2>Account</h2>
+                <h2 className=' text-xl pb-4'>Account</h2>
                 <ul>
                     <li>
                         <Link href="/">Log in</Link>
@@ -68,7 +68,7 @@ export default function Footer() {
                 </ul>
             </section>
             <section>
-                <h2>Care</h2>
+                <h2 className=' text-xl pb-4'>Care</h2>
                 <ul>
                     <li>
                         <Link href="/">Delivery</Link>
@@ -84,21 +84,36 @@ export default function Footer() {
                     </li>
                 </ul>
             </section>
-            <section>
-                <h2>Subscribe</h2>
-                <p>
+            <section className=' pl-8'>
+                <h2 className=' text-xl pb-4'>Subscribe</h2>
+                <p className=' pb-4'>
                 Join our newsletter and get vouchers and exclusive deals straight to your inbox.
                 </p> 
-                <form id="email-form" name="email-form"><input type="email" placeholder="enter your email"/><button>SUBSCRIBE</button></form>
+                <form id="email-form" name="email-form"><input type="email" placeholder="Enter your email" className=' p-3 pl-7 pr-10 mr-4 border border-gray-500 rounded-md'/><button className=' p-3  bg-gray-500 rounded-md'>SUBSCRIBE</button></form>
+                <p className=' text-sm pt-4'>
+                By subscribing you agree to with our <a href="#" className=' underline'>Privacy Policy</a> and provide consent to receive updates from our company.
+                </p>
             </section>
+
         </div>
-        <div className='flex flex-row justify-end gap-2'>
-            <a href="https://facebook.com/" target='blank'><FaFacebookF/></a>
-            <a href="https://instagram.com/" target='blank'><FaInstagram/></a>
-            <a href="https://twitter.com/" target='blank'><FaTwitter/></a>
-            <a href="https://www.linkedin.com/" target='blank'><FaLinkedin/></a>
-            <a href="https://www.youtube.com/" target='blank'><FaYoutube/></a>
-        </div>
+        <footer className='flex pt-7 justify-between'>
+
+            <nav className='flex gap-10 '>
+                <h3>© Baby_Dev. All rights reserved.</h3>
+                <a href="#" className=' underline'>Privacy Policy</a>
+                <a href="#" className=' underline'>Terms and Conditions</a>
+                <a href="#" className=' underline'>Powered by Babydev</a>
+            </nav>
+
+            <nav className='flex gap-3'>
+                <Link href="https://facebook.com/" target='blank'><FaFacebookF/></Link>
+                <Link href="https://instagram.com/" target='blank'><FaInstagram/></Link>
+                <Link href="https://twitter.com/" target='blank'><FaTwitter/></Link>
+                <Link href="https://www.linkedin.com/" target='blank'><FaLinkedin/></Link>
+                <Link href="https://www.youtube.com/" target='blank'><FaYoutube/></Link>
+            </nav>
+
+        </footer>
     </footer>
   )
 }
