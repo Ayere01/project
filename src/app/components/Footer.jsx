@@ -89,7 +89,7 @@ export default function Footer() {
                 <p className=' pb-4'>
                 Join our newsletter and get vouchers and exclusive deals straight to your inbox.
                 </p> 
-                <form id="email-form" name="email-form"><input type="email" placeholder="Enter your email" className=' p-3 pl-7 pr-10 mr-4 border border-gray-500 rounded-md'/><button className=' p-3  bg-gray-500 rounded-md'>SUBSCRIBE</button></form>
+                <form id="email-form" name="email-form"><input type="email" placeholder="Enter your email" className=' p-3 pl-2 pr-2 mr-2 border border-gray-500 rounded-md'/><button className=' p-3  bg-gray-500 rounded-md'>SUBSCRIBE</button></form>
                 <p className=' text-sm pt-4'>
                 By subscribing you agree to with our <a href="#" className=' underline'>Privacy Policy</a> and provide consent to receive updates from our company.
                 </p>
